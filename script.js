@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
           <h3 id="title">${title}</h3>
           <p id="year">2020</p>
           <p id="language">${lang(original_language)}</p>
-          <p id="rating" class="${color(vote_average)}">8.9</p>
+          <p id="rating" class="${color(vote_average)}">${vote_average}</p>
         </div>
         <div id="overview">
           ${overview}
