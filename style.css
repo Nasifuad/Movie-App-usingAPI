@@ -95,12 +95,14 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 10px;
+  gap: 10px;
   /* background-color: #1a1d3ce5; */
 }
 #title {
-  color: #fff;
-  font-size: 1.1rem;
+  color: #c10303;
+  font-size: 1rem;
   font-weight: bolder;
+  padding: 10px;
 }
 #year,
 #language {
