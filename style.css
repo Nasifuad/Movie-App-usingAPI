@@ -53,13 +53,10 @@ body {
   margin-top: 2rem;
   display: flex;
   flex-wrap: wrap;
-  /* width: 100%; */
-  /* height: 100vh; */
+
   justify-content: center;
   gap: 1rem;
   transition: flex 0.5s;
-  /* position: relative; */
-  /* overflow: hidden; */
 }
 .movie {
   display: flex;
