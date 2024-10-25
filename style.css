@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+:root {
+  --primary-color: #1a1d3ce5;
+  --secondary-color: #2c3488;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  width: 100lvw;
+  height: 100vh;
+}
+.heading {
+  background-color: var(--primary-color);
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  padding: 20px;
+  position: relative;
+}
+.search {
+  /* color: #fff; */
+  padding: 5px 10px;
+  outline: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+  border: 1px solid black;
+  position: relative;
+}
+.search::placeholder {
+  color: var(--secondary-color);
+}
+.search:focus {
+  background-color: var(--primary-color);
+  border: 1px solid transparent;
+  color: #fff;
+}
+
+#searchbtn {
+  position: absolute;
+  right: 25px;
+  top: 25px;
+  font-size: 1.2rem;
+  background: none;
+  border: none;
+}
+.main {
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: center;
+  gap: 1rem;
+  transition: flex 0.5s;
+}
+.movie {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  position: relative;
+  overflow: hidden;
+  background-color: var(--primary-color);
+  box-shadow: 5px 8px 15px black;
+  border-radius: 10px;
+}
+#overview {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  /* top: 30px; */
+  padding: 10px;
+  transform: translateY(101%);
+  background: var(--primary-color);
+  color: white;
+}
+.movie:hover #overview {
+  transform: translateY(0);
+  transition: transform 0.5s ease-in;
+}
+#movie-img {
+  width: 100%;
+}
+
+.movie-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+  /* background-color: #1a1d3ce5; */
+}
+#title {
+  color: #c10303;
+  font-size: 1rem;
+  font-weight: bolder;
+  padding: 10px;
+}
+#year,
+#language {
+  letter-spacing: 2.2px;
+  /* font-weight: 400; */
+  font-size: 1rem;
+  color: rgb(207, 194, 251);
+  font-weight: bolder;
+}
+
+.movie-head .red {
+  color: rgb(255, 29, 29);
+  font-weight: bold;
+  font-size: 1rem;
+}
+.movie-head .green {
+  color: rgb(0, 255, 0);
+  font-weight: bold;
+  font-size: 1rem;
+}
+.movie-head .yellow {
+  color: rgb(223, 253, 30);
+  font-weight: bold;
+  font-size: 1rem;
+}
+.credit {
+  width: 100%;
+  /* width: 110px; */
+  margin: 20px;
+  background: var(--primary-color);
+  text-align: center;
+}
